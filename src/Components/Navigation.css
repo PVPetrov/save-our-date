@@ -1,0 +1,21 @@
+.navigation {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 3em;
+	display: flex;
+	justify-content: center;
+}
+
+.navigation nav {
+	display: flex;
+	flex: 1 1 auto;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.link {
+	text-transform: uppercase;
+	font-family: Copperplate;
+}
