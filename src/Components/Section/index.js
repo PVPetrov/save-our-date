@@ -5,7 +5,9 @@ import './index.css'
 const Section = ({classes, children, ...props}) => {
   return (
     <div className={classNames('section', classes)} {...props}>
+      <div className="border">
       {children}
+      </div>
     </div>
   )
 }

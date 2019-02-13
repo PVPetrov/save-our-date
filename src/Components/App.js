@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { Grid } from '@material-ui/core'
 import Welcome from './Welcome'
 import Navigation from './Navigation'
 import Ceremony from './Ceremony'
@@ -8,19 +7,24 @@ import RSVP from './RSVP'
 import './App.css';
 
 class App extends Component {
+	
 	render() {
 		return (
-			<Grid container direction="column">
-				<Grid item>
+			<div className="container">
+				<div className="header">
 					<Navigation />
-				</Grid>
-				<Grid item>
-					<Welcome />
-					<Ceremony />
-					<Reception />
-					<RSVP />
-				</Grid>
-			</Grid>
+				</div>
+				<div className="main">
+					<div className="absolute-container">
+						<div className="inner-container">
+							<Welcome ref={this.home}/>
+							<Ceremony />
+							<Reception />
+							<RSVP />
+						</div>
+					</div>								
+				</div>
+			</div>
 		);
 	}
 }

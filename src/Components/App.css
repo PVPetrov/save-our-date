@@ -1,42 +1,52 @@
-@import url('https://fonts.googleapis.com/css?family=Great+Vibes');
-
-html, body, h1, h2, h3, h4, h5, h6{
+body{
   margin: 0;
   padding: 0;
+  height: 100%;
 }
+
 
 .italic-fonts {
   font-family: 'Great Vibes', cursive;
   font-size: 2em;
 }
-
 .container{
-  display: flex;
-  width: 100%;
-  height: calc(100vh-3em);
-  flex-direction: column;
-  margin: 3em 0 0 0;
-  padding: 0;
-}
-
-
-
-.section{
-  height: calc((100vh - 3em) / 2);
-  padding: 1em;
+  height: 100vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
 }
 
-.section div{
-  overflow: hidden;
+.header{
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main{
+  flex: 1 1 0;
+  position: relative;
+}
+
+.absolute-container{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.inner-container{
+  flex: 1 1 0;
+  overflow: auto;
 }
 
 .bg-pink{
   background-color: rgba(247, 194, 192, 0.8);
   color: rgba(35, 48, 77, 0.8);
 }
-
 .bg-blue{
   background-color: rgba(35, 48, 77, 0.8);
   color: white;

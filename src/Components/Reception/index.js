@@ -5,7 +5,7 @@ import './index.css'
 
 const Reception = () => {
   return (
-    <Page name="reception">
+    <Page id="reception" name="reception">
       <Section classes="bg-pink">
         <div>
             <h2>Reception</h2>
