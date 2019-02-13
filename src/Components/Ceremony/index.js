@@ -12,7 +12,7 @@ class Ceremony extends Component {
     render(){
         return(
             <section name="ceremony" className="page">
-                <section className="section">
+                <section className="section bg-pink">
                     <div>Ceremony will take place in Tallinn</div>
                 </section>
                 <section className="section bg-blue">
