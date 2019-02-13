@@ -7,7 +7,6 @@ import RSVP from './RSVP'
 import './App.css';
 
 class App extends Component {
-	
 	render() {
 		return (
 			<div className="container">
@@ -15,16 +14,12 @@ class App extends Component {
 					<Navigation />
 				</div>
 				<div className="main">
-					<div className="absolute-container">
-						<div className="inner-container">
-							<Welcome ref={this.home}/>
-							<Ceremony />
-							<Reception />
-							<RSVP />
-						</div>
-					</div>								
+					<Welcome/>
+					<Ceremony />
+					<Reception />
+					<RSVP />
 				</div>
-			</div>
+			</div>								
 		);
 	}
 }
